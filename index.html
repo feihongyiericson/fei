@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Contact Form</title>
+	<!--[if IE]><script>
+	$(document).ready(function() { 
+
+$("#form_wrap").addClass('hide');
+
+})
+
+</script><![endif]-->
+
+<style>
+
+
+body, div, h1,h2, form, fieldset, input, textarea, footer,p {
+	margin: 0; padding: 0; border: 0; outline: none;
+}
+
+
+@font-face {
+	font-family: 'YanoneKaffeesatzRegular';
+	src: url('yanonekaffeesatz-regular-webfont.eot');
+	src: url('yanonekaffeesatz-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	url('yanonekaffeesatz-regular-webfont.woff') format('woff'),
+	url('yanonekaffeesatz-regular-webfont.ttf') format('truetype'),
+	url('yanonekaffeesatz-regular-webfont.svg#YanoneKaffeesatzRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {background: #ccc url('images/bg_out.png'); color: #7c7873; font-family: 'YanoneKaffeesatzRegular';}
+p {text-shadow:0 1px 0 #fff; font-size:24px; margin: 30px auto 10px;}
+#wrap {width:700px; margin:-80px auto 0; height:1000px;}
+
+	#form_wrap { overflow:hidden; height:600px; position:relative; top:350px;
+		-webkit-transition: all 1s ease-in-out .3s;
+		-moz-transition: all 1s ease-in-out .3s;
+		-o-transition: all 1s ease-in-out .3s;
+		transition: all 1s ease-in-out .3s;}
+	
+	#form_wrap:before {content:"";
+		position:absolute;
+		bottom:270px;left:0px;
+		background:url('images/before.png');
+		background-size: 100%;
+		width:100%;height: 320px;}
+	
+	#form_wrap:after {content:"";position:absolute;
+		bottom:0px;left:0;
+		background:url('images/after.png');
+		background-size: 100%;
+		width:100%;height: 350px; }
+
+	#form_wrap.hide:after, #form_wrap.hide:before {display:none; }
+	#form_wrap:hover {height:1300px;top:-150px;}
+
+
+	form {background:#f7f2ec url('images/letter_bg.png');
+		background-size: 100%;
+		position:relative;top:250px;overflow:hidden;
+		height:200px;width:600px;margin:0px auto;padding:20px; 
+		border: 1px solid #fff;
+		border-radius: 3px; 
+		-moz-border-radius: 3px; -webkit-border-radius: 3px;
+		box-shadow: 0px 0px 3px #9d9d9d, inset 0px 0px 27px #fff;
+		-moz-box-shadow: 0px 0px 3px #9d9d9d, inset 0px 0px 14px #fff;
+		-webkit-box-shadow: 0px 0px 3px #9d9d9d, inset 0px 0px 27px #fff;
+		-webkit-transition: all 1s ease-in-out .3s;
+		-moz-transition: all 1s ease-in-out .3s;
+		-o-transition: all 1s ease-in-out .3s;
+		transition: all 1s ease-in-out .3s;}
+
+
+		#form_wrap:hover form {height:880px;}
+
+		label {
+			margin: 11px 20px 0 0; 
+			font-size: 16px; color: #b3aba1;
+			text-transform: uppercase; 
+			text-shadow: 0px 1px 0px #fff;
+		}
+
+		input[type=text], textarea {
+			font: 20px normal normal uppercase helvetica, arial, serif;
+			color: #7c7873;background:none;
+			width: 100%; height: 36px; 
+			height: 50px;
+			padding: 0px 10px; margin: 10px 0 30px 0;
+			border:1px solid #f8f5f1;
+			overflow: hidden;
+			-moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
+			-moz-box-shadow: inset 0px 0px 1px #726959;
+			-webkit-box-shadow:  inset 0px 0px 1px #b3a895; 
+			box-shadow:  inset 0px 0px 1px #b3a895;
+		}	
+
+		textarea { height: 250px; padding-top:14px;font-size: 30px;}
+
+		textarea:focus, input[type=text]:focus {background:rgba(255,255,255,.35);}
+
+		#form_wrap button {
+			position:relative;
+			font-family: 'YanoneKaffeesatzRegular'; 
+			font-size:24px; color: #7c7873;
+			width:50%; text-align:center;opacity:0;
+			background:none;
+			border:none;
+			cursor: pointer;
+			-moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; 
+			-webkit-transition: opacity .6s ease-in-out 0s;
+			-moz-transition: opacity .6s ease-in-out 0s;
+			-o-transition: opacity .6s ease-in-out 0s;
+			transition: opacity .6s ease-in-out 0s;
+		}
+		#ok{
+			left: -50px;
+		}
+		#ciq{	
+			position:absolute;
+			left: 250px;
+			top:-38px;
+		}
+
+		#form_wrap:hover button {z-index:100;opacity:1;
+			-webkit-transition: opacity .5s ease-in-out 1.3s;
+			-moz-transition: opacity .5s ease-in-out 1.3s;
+			-o-transition: opacity .5s ease-in-out 1.3s;
+			transition: opacity .5s ease-in-out 1.3s;}
+
+			#form_wrap:hover button:hover {color:#000;}
+
+</style>
+<link rel="stylesheet" href="http://www.yyyweb.com/demo/common/init.css">
+<style>
+  .top-banner {
+    background-color: #555;
+  }
+</style>
+</head>
+<body style="margin-top: 60px">
+	<div id="wrap">
+		<h1></h1>
+		<div id='form_wrap'>
+			<form>
+				<p>2024，圣诞快乐！</p>
+				
+				
+				<label for="name">收件人: 知琪</label>
+				<p></p>	
+				<label for="email">其实是想圣诞节的时候给你写封信，所以开头会是圣诞快乐，但等不了那么久了，才两个星期没有跟你
+说话就有点想跟你说话了，不知道你最近心情有没有变好点，我都不敢发消息找你，也好久没有和你说话了，有时候天时地利很重要，明明你一周前明确说明不和我出来玩
+，实际上我们已经有一个月没有见过面了，其实节奏放慢点也没关系，能聊天见面说话就已经很好了。<p></p>	
+不知道你最近有没有遇到什么事情，其实我的生活简单而且平淡，但想分享给你。昨天吃完晚饭回来的时候看着手机愣神，直直的走着直接撞柱子上面了，
+还好没人看到，太搞笑了，前天打完球，美宜佳老板又来找我说话了，他说他在看高考的新闻，明年他孩子就高考了，说着说着他就目光凝聚了，
+可能他一个人一直守着一个店也很孤独吧。大前天晚上，一个同学的好哥们找我想去华科读博，问我计算机这个专业到底怎么样，每个人可能都没有
+我们想象中过的那么好吧，生活总有不如意的地方。上周末我去露营了，第一次去，还去山姆买了羊排，牛肉，可以一边玩桌游，一边
+吃烤肉，要是你也在就好了，真的超级超级有意思，坐在湖边的感觉很好，就是有点冷，我想着就躺在野餐垫上看看书也是很不错的选择。
+有好多好多话想跟你说，但知道你最近状态不好，说多了你就更反感我了。
+<p></p>	我其实就想说慢慢来好不好，我没有在求一个结果，我觉得应该慢慢生活，慢慢走进你的生活，慢慢欣赏身边的风景，松弛一点，花间明月，松下凉风。			</label>
+				
+			</form>
+		</div>
+	</div>
+<div style="position:fixed;height:90px;width:100%;left:0;bottom:10px"><div class="footer-banner" style="width:728px; margin:0px auto"></div></div>	
+</body>
+<script>        
+    var btn1 = document.getElementById('ok');  
+    var btn2 = document.getElementById('ciq');    
+    var fm = document.getElementById('from');
+    var to = document.getElementById('to'); 
+    var message = document.getElementById('message');
+	btn1.onclick = function(){
+		if(fm.value==null||fm.value=='')  alert("请填写发件人");
+		else if(to.value==null||to.value=='')  alert("请填写收件人");
+		else if(message.value==null||message.value=='')  alert("请填写祝福语");
+		else {
+			var r = confirm("确定检查无误吗？");
+			if(r==true) window.location.href="https://www.baidu.com/?tn=22073068_oem_dg";
+		}
+	}
+	btn2.onclick = function(){
+		if(fm.value==null||fm.value=='')  alert("请填写发件人");
+		else if(to.value==null||to.value=='')  alert("请填写收件人");
+		//else if(message.value!=null&&message.value!='')  alert("点击完成即可");
+		else window.location.href="https://www.baidu.com/?tn=22073068_oem_dg";
+	}
+</script>
+</html>
